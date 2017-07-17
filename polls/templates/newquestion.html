@@ -1,0 +1,18 @@
+
+{% extends "baase.html"  %}
+{% block content  %}
+<center> 
+{% if Question.id %}
+<h1>Edit Question</h1>
+{% else %}
+<h2>ajouter une nouvelle question</h2>
+{% endif %}
+<form action="{{ action }}" method="POST">
+
+{% csrf_token %}
+ {{ form.as_p}}            
+<input  type="submit"value="question"/>
+</form>
+ 
+</center>
+{% endblock %}

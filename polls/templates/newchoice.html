@@ -1,0 +1,17 @@
+{% extends "baase.html"  %}
+{% block content  %}
+<center> 
+{% if Choice.id %}
+<h1>Edit Choice</h1>
+{% else %}
+<h2>ajouter un nouveau choix</h2>
+{% endif %}
+<form action="{{ action }}" method="POST">
+
+{% csrf_token %}
+ {{ form.as_p}}            
+<input  type="submit"value="Choice"/>
+</form>
+ 
+</center>
+{% endblock %}

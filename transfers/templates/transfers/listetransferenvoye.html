@@ -1,0 +1,30 @@
+{% extends "baase.html" %}
+{% block content %}
+<center>
+<h1>voila la liste des Transfers</h1>
+<table border="2"> 
+<tr><th>last_namesender </th>
+<th>first_namesender</th>
+<th>Amount</th>
+<th>MTCN</th>
+<th>last_namereceiver </th>
+<th>first_namereceiver</th>
+</tr>
+{% for trs in transfer %} 
+<tr>
+     <td>{{trs.last_namesender }}</td>
+     <td>{{trs.first_namesender  }}</td> 
+     <td>{{trs.Amount  }}</td> 
+     <td>{{trs.MTCN  }}</td>
+     <td>{{trs.last_namereceiver  }}</td>
+     <td>{{trs.last_namereceiver  }}</td>
+     
+     <td><a href="{% url 'transfers:paytransfer' %}"></a></td> 
+</tr>
+{% endfor  %}
+</table>
+</center>
+
+{% endblock %}
+
+

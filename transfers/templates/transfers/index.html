@@ -1,0 +1,59 @@
+{% extends "baase.html" %}
+{% block content %}
+<center>
+{% if transfer %} 
+<h1>voila la liste des Transfersn deja envoye</h1>
+<table border="2"> 
+<tr><th>last_namesender </th>
+<th>first_namesender</th>
+<th>Amount</th>
+<th>MTCN</th>
+<th>last_namereceiver </th>
+<th>first_namereceiver</th>
+<th>statut</th>
+</tr>
+
+{% for trs in transfer %} 
+<tr>
+     <td>{{trs.last_namesender }}</td>
+     <td>{{trs.first_namesender  }}</td> 
+     <td>{{trs.montant  }}</td> 
+     <td>{{trs.MTCN  }}</td>
+     <td>{{trs.last_namereceiver  }}</td>
+     <td>{{trs.first_namereceiver  }}</td>
+     <td>{{trs.statut  }}</td>
+     <td><a href="{% url 'transfers:paytransfer' %}"></a></td> 
+</tr>
+{% endfor  %}
+{% endif  %}
+</table>
+{% if transfers %} 
+<h1>voila la liste des Transfers deja recu</h1>
+<table border="2"> 
+<tr><th>last_namesender </th>
+<th>first_namesender</th>
+<th>Amount</th>
+<th>MTCN</th>
+<th>last_namereceiver </th>
+<th>first_namereceiver</th>
+<th>statut</th>
+</tr>
+{% for trs in transfers %} 
+<tr>
+     <td>{{trs.last_namesender }}</td>
+     <td>{{trs.first_namesender  }}</td> 
+     <td>{{trs.montant  }}</td> 
+     <td>{{trs.MTCN  }}</td>
+     <td>{{trs.last_namereceiver  }}</td>
+     <td>{{trs.first_namereceiver  }}</td>
+     <td>{{trs.statut  }}</td>
+     <td><a href="{% url 'transfers:paytransfer' %}"></a></td> 
+</tr>
+{% endfor  %}
+</table>
+{% endif  %}
+</center>
+
+{% endblock %}
+
+

@@ -1,0 +1,33 @@
+{% extends "baase.html"%}
+{% block content %}
+<center>
+{% if form %}
+<body>
+<form method="POST" action ="{% url 'transfers:paytransfer' %}">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Recherche">
+</form></body>
+{% endif %} 
+{% if transfer %}
+
+<br><br><br>
+<h1>Detail sur le transfert:<br><br/></h1>
+<table border="2">
+<tr>
+<p><td>Name of sender : </td><td> {{transfer.last_namesender}} {{transfer.first_namesender}}</td></p>
+</tr>
+<tr>
+<p><td>Amount : </td><td> {{transfer.montant}}</p></td></tr>
+<tr>
+<p><td>ville : </td><td> {{transfer.villesender}}</p></td></tr>
+<tr><p><td>MTCN : </td><td> {{transfer.MTCN}}</p></td></tr>
+<tr><p><td>Name of receiver  : </td><td>{{transfer.last_namereceiver}} {{transfer.first_namereceiver}}</td></p></tr>
+</table>
+<br><br><br><a href="{% url 'transfers:updateTransfer' pk=transfer.id %}">pay a  transfer</a>
+<br><br><br><a href="{% url 'transfers:addtransfer' %}">add new transfer</a>
+{% else %}
+{% endif %} 
+ </center>
+{% endblock %}
+

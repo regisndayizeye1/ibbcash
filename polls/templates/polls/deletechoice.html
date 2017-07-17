@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<center>
+<h1>Delete choice</h1>
+<p>Are you sure you want to delete the choice{{ choice }}?</p>
+<form action="{{action}}" method="POST">
+{% csrf_token %}
+<input type="submit" value="Yes, delete." />
+<a href="{% url 'polls:listechoice' %}">No, cancel.</a>
+</form>
+</center>
+{% endblock %}

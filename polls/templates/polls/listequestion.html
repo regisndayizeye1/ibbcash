@@ -1,0 +1,37 @@
+{% extends "baase.html" %}
+{% block content %}
+{% if user.is_authenticated and user.is_staff %}
+<center>
+<h1>voila la liste des Questions</h1>
+<table border="2"> 
+<tr><th>questiontext</th><th>publicationdate</th> 
+</tr>
+{% for question in question_list %} 
+<tr>
+     <td>{{question.question_text }}</td>
+     <td>{{question.pub_date  }}</td> 
+     <td><a href="{% url 'polls:updatequestion' pk=question.pk %}">update</a></td>
+     <td><a href="{% url 'polls:deletequestion' pk=question.id %}">Delete</a></td> 
+</tr>
+{% endfor  %}
+</table>
+</center>
+{% else %}
+
+<center>
+<h1>voila la liste des Questions</h1>
+<table border="2"> 
+<tr><th>questiontext</th><th>publicationdate</th> 
+</tr>
+{% for question in question_list %} 
+<tr>
+     <td>{{question.question_text }}</td>
+     <td>{{question.pub_date  }}</td>
+</tr>
+{% endfor  %}
+</table>
+
+{% endif %}
+{% endblock %}
+
+</center>

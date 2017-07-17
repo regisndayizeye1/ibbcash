@@ -1,0 +1,19 @@
+{% extends "baase.html" %}
+{% block content %}
+{% if user.is_authenticated  %}
+<center>
+<h1>voila la liste des Transfers</h1>
+ <table border="2">
+<tr><th>name of sender</th><th> amount</th><th>MTCN</th><th>name of receiver</th><th>Detail</th></tr>
+{% for transfert in transfer %} 
+<tr><td>{{transfert.last_namesender}} {{transfert.first_namesender}}</td><td>{{transfert.montant}}</td><td>{{transfert.MTCN}}</td><td>{{transfert.last_namereceiver}} {{transfert.first_namereceiver}}</td>
+<td><a href="{% url 'clatransfers:detailclatransfers' pk=transfert.id %}"> {{ transfert.last_namesender }}   {{transfert.first_namesender}}</a></td></tr>
+
+{% endfor  %}
+</table>
+<br><br><a href="{% url 'clatransfers:createvieutransfer' %}">add new transfer</a>
+<br><br><br><a href ="/clatransfers/detailclatransfers/{{transfert.id}}?format=pdf "> imprimer transfer</a>
+</center>
+{% endif %}
+{% endblock %}
+

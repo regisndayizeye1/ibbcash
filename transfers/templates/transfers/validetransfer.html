@@ -1,0 +1,33 @@
+{% extends "baase.html"%}
+{% block content %}
+<center>
+{% if form %}
+<body>
+<form method="POST">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Imprimer">
+</form></body>
+{% endif %} 
+
+{% if trs %}
+<br><br><br>
+<h1>Detail sur le transfert:<br><br/></h1>
+
+<tr><p><td>Name of sender : </td><td> {{trs.last_namesender}} {{trs.first_namesender}}</td></p></tr>
+<tr><p><td>Amount : </td><td> {{trs.montant}}</p></td></tr>
+<tr><p><td>MTCN : </td><td> {{trs.MTCN}}</p></td></tr>
+<tr><p><td>ville : </td><td> {{trs.villesender}}</p></td></tr>
+<tr><p><td>Name of receiver  : </td><td>{{trs.last_namereceiver}} {{trs.first_namereceiver}}</td></p></tr><tr>
+<tr><p><td>Carte National d'Identite : </td><td> {{trs.cni}}</p></td></tr>
+<tr><p><td>ville de destination : </td><td> {{trs.villereceiver}}</p></td></tr>
+<tr>
+<p><td>adresse de destination : </td><td> {{trs.adressereceiver}}</p></td></tr>
+<tr>
+<p><td>Telephone : </td><td> {{trs.fonenumber}}</p></td></tr>
+<p><td>statut  : </td><td>{{trs.statut}}</p></td></tr>
+
+<br><br><br><a href="{% url 'transfers:addtransfer' %}">add a new  transfer</a>
+
+{% endif %} 
+{% endblock %} 

@@ -1,0 +1,36 @@
+
+{% extends "baase.html"%}
+{% block content %}
+<center>
+<body>
+{% if form %}
+<form method="POST" action ="">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Recherche">
+</form></body>
+{% endif %} 
+{% if transfer %}
+
+<br><br><br>
+<h1>Detail sur le transfert:<br><br/></h1>
+<table border="2"background-color:#4285F4;margin-top:8%;height:35px;width:80%;margin-left:19%;>
+<tr>
+<p><td>Name of sender : </td><td> {{transfer.last_namesender}} {{transfer.first_namesender}}</td></p>
+</tr>
+<tr>
+<p><td>Amount : </td><td> {{transfer.montant}}</p></td></tr>
+<tr>
+<p><td>ville : </td><td> {{transfer.villesender}}</p></td></tr>
+<tr><p><td>MTCN : </td><td> {{transfer.MTCN}}</p></td></tr>
+<tr><p><td>Name of receiver  : </td><td>{{transfer.last_namereceiver}} {{transfer.first_namereceiver}}</td></p></tr>
+<tr><p><td>Statut : </td><td> {{transfer.statut}}</p></td></tr>
+</table>
+<br><br><br><a href ="/clatransfers/detailclatransfers/{{transfer.id}}?format=pdf "> imprimer transfer</a>
+<br><br><br><a href="{% url 'clatransfers:TransferPay' pk=transfer.id %}">pay a  transfer</a>
+<br><br><br><a href="{% url 'clatransfers:createvieutransfer' %}">add new transfer</a>
+{% else %}
+{% endif %} 
+ </center>
+{% endblock %}
+

@@ -1,0 +1,14 @@
+{% extends "baase.html"%}
+{% block content %}
+<center>
+{% if form %}
+<body>
+<form method="POST" action ="">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="pay">
+</form></body>
+{% endif %}  
+ </center>
+{% endblock %}
+

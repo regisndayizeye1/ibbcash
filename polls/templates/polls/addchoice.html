@@ -1,0 +1,16 @@
+{% extends "baase.html" %}
+{% block content %}
+<center>
+{% block content %}
+<form  method='post'>
+        <h2>ajouter un nouveau choi</h2>
+       {% csrf_token %}
+       {{ form.as_p}}
+            
+    <button type="submit">add choise</button>
+</form>
+% endfor  %}
+{% endblock %}
+</center> 
+    
+    

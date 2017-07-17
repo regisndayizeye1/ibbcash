@@ -1,0 +1,94 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Ibbwebbank</title>
+<style type="text/css">
+<!--
+.Style1 {	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.Style3 {color: #FFFFFF}
+.Style4 {font-family: Verdana, Arial, Helvetica, sans-serif}
+.Style5 {font-size: 12px}
+.Style8 {font-size: 12px; font-weight: bold; }
+.Style13 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #FFFFFF; }
+.Style15 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; }
+-->
+</style>
+
+</head><body><table cellspacing="0" cellpadding="0" bordercolor="#DF0000" border="1" align="center" width="100">
+  <tbody><tr>
+    <td><table cellspacing="0" cellpadding="0" border="0" bgcolor="#C0CDDC" align="center" width="686">
+      <tbody><tr>
+        <td width="666"><table cellspacing="0" cellpadding="0" border="0" align="center" width="699">
+          <tbody><tr>
+            <td rowspan="2" width="154"><img src="logo_files/Logo_ibbwebbank1.gif" height="128" width="175"></td>
+            <td width="610"><div align="center">
+                <h1 class="Style3">Interbank Burundi </h1>
+            </div></td>
+            <td rowspan="2" align="right" width="610" valign="bottom"><table title="Click to Verify - This site chose Symantec SSL for secure e-commerce and confidential communications." cellspacing="0" cellpadding="2" border="0" width="135">
+              <tbody><tr>
+                <td align="center" width="135" valign="top"><script type="text/javascript" src="logo_files/getseal"></script><img name="seal" src="logo_files/getseal.gif" oncontextmenu="return false;" usemap="#sealmap_small" alt="" border="0"> <map name="sealmap_small" id="sealmap_small"><area alt="Click to Verify - This site has chosen an SSL Certificate to improve Web site security" title="" href="javascript:vrsn_splash()" shape="rect" coords="0,0,100,50" tabindex="-1" style="outline:none;"><area alt="Click to Verify - This site has chosen an SSL Certificate to improve Web site security" title="" href="javascript:vrsn_splash()" shape="rect" coords="0,50,53,72" tabindex="-1" style="outline:none;"><area alt="" title="" href="javascript:symcBuySSL()" shape="rect" coords="53,50,100,72" style="outline:none;"></map>
+                    <br>
+                  <a href="http://www.symantec.com/ssl-certificates" target="_blank" style="color:#000000; text-decoration:none; font:bold 7px verdana,sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;"></a></td>
+              </tr>
+            </tbody></table>              <span class="Style15"><a href="https://www.ibbwebbank.com/index.cfm">Français</a><a href="https://www.ibbwebbank.com/index.cfm"><img src="logo_files/fr.jpg" height="21" width="31"></a></span></td>
+          </tr>
+          <tr>
+            <td><div align="center">
+                <h3 class="Style3">&nbsp;</h3>
+            </div></td>
+            </tr>
+        </tbody></table></td>
+        <td width="20">&nbsp;</td>
+      </tr>
+      <tr>
+        <td bordercolor="#FFFFFF"><table cellspacing="5" cellpadding="0" border="0" align="center">
+          <tbody><tr>
+            <td width="51" valign="top">&nbsp;</td>
+            <td width="619"><table cellspacing="3" cellpadding="0" bordercolor="#FFFFFF" border="1" width="671">
+              <tbody><tr height="13">
+                <td class="Style13" height="41" width="96"><div align="center"><strong>Introduction</strong></div></td>
+                <td class="Style4" width="115"><div align="center"><strong><a href="https://www.ibbwebbank.com/guideen.cfm" class="Style5" onfocus="this.blur()">Services</a></strong></div></td>
+                <td class="Style4" width="135"><div align="center"><strong><a href="https://www.ibbwebbank.com/supporten.cfm" class="Style5" onfocus="this.blur()">Support </a></strong></div></td>
+                <td class="Style4" width="109"><div align="center">
+                    <p><strong><a href="https://www.ibbwebbank.com/cours2.cfm" class="Style5" onfocus="this.blur()">Exchange rate</a></strong></p>
+                </div></td>
+                <td class="Style4" width="106"><div align="center"><strong><a href="https://www.ibbwebbank.com/inscriformen.cfm" class="Style5" onfocus="this.blur()">Register</a></strong></div></td>
+                <td class="Style4" width="75"><div align="center"><a href="https://www.ibbwebbank.com/ensecure/login.cfm" class="Style8">Login In </a></div></td>
+              </tr>
+                </tbody><tbody>
+                </tbody>
+              </table>
+              </td>
+          </tr>
+          <tr>
+            <td valign="top">&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td valign="top">&nbsp;</td>
+            <td><div class="Style5">
+             <div align="justify">
+                <p class="Style4">Ibbwebbank service is offered by <strong>INTERBANK BURUNDI S.A</strong>
+ to allow all custumers to manage their banking transactions online. 
+Wherever you are you need only a computer with internet access. </p>
+                </div>
+            </div></td>
+          </tr>
+        </tbody></table></td>
+        <td><p align="center"></p></td>
+      </tr>
+      <tr>
+        <td colspan="2" bordercolor="#FFFFFF" valign="top"><img src="logo_files/empty.gif" alt="3" height="1" width="1"></td>
+      </tr>
+      <tr>
+        <td colspan="2" bordercolor="#FFFFFF">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2" bordercolor="#FFFFFF" bgcolor="#FFFFFF"><div class="Style1" align="center">© Interbank Burundi 2006 </div></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+</tbody></table>
+
+
+</body></html>
